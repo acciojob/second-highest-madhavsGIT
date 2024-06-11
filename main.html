@@ -10,7 +10,7 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			var mx = Number.MIN_VALUE;
+			var mx = -Infinity;
 			var ind = -1;
 			
 			for(let i = 0; i < arr.length; i++) {
@@ -22,7 +22,7 @@
 
 			delete[ind];
 
-			mx = Number.MIN_VALUE;
+			mx = -Infinity;
 			
 			for(let i = 0; i < arr.length; i++) {
 				if(arr[i] > mx){
